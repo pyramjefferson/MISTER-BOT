@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mister-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OWNER_NUMBER
+        value: "50940217685"
+      - key: BOT_MODE
+        value: public
+      - key: PREFIX
+        value: "."
